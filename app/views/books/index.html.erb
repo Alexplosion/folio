@@ -1,7 +1,7 @@
 <%= link_to  "Ajouter un nouveau projet", new_book_path %>
 
 <% @books.each do |book| %>
-    <h1><%= link_to book.title, book_path(book.id) %></h1>
+    <h1><%= link_to book.title, book_show_path(book.id) %></h1>
     <h2><%= book.subtitle %></h2>
     <p><%= book.body %></p>
     <%= image_tag book.thumb_img unless book.thumb_img.nil? %>
