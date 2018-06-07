@@ -8,3 +8,9 @@
 
 <p><%= @book.body %></p>
 
+
+
+<h2> Technologies utilisée </h2>
+<% @book.technologies.each do  |tech| %>
+    <p><%= tech.name %>
+<% end %>
