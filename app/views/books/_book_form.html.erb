@@ -15,6 +15,14 @@
     <%= form.label :body %>
     <%= form.text_area :body, id: :book_body %>
   </div>
+  <ul>
+    <%= form.fields_for :technologies do |techn_form| %>
+    <li>
+      <%= techn_form.label :name %>
+      <%= techn_form.text_field :name %>
+    </li>
+    <% end %>
+  </ul>
 
   <div class="actions">
     <%= form.submit %>
