@@ -29,7 +29,7 @@ gem 'friendly_id', '~> 5.1.0'
 gem 'devise'
 gem 'bootstrap', '~> 4.1.1'
 gem 'jquery-rails'
-gem 'yam_view_tool', git: "https://github.com/Alexplosion/Yam_view_tool"
+gem 'yam_view_tool'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
 # Use ActiveModel has_secure_password
