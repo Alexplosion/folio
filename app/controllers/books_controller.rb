@@ -1,6 +1,8 @@
 class BooksController < ApplicationController
     before_action :set_book, only: [:edit, :update, :show, :destroy]
     layout("book")
+      access all: [:show, :index], user: {except: [:destroy, :new, :create, :update, :edit]}, site_admin: :all
+
 
 
 
