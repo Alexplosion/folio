@@ -4,18 +4,22 @@
     <title><%= @book_title %></title>
     <%= csrf_meta_tags %>
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag    'blogs', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
-   <%= render  "shared/nav", location: "top" %>
+  <%= login_helper %>
 
-     <%= login_helper %>
 
+      <%= render  "shared/nav", location: "bottom" %>
+
+
+    
 
 
     <%= yield %>
-    <%= source_helper("application") %>
+        <%= source_helper("blog") %>
+
   </body>
 </html>

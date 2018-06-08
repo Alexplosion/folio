@@ -1,11 +1,3 @@
 <%= link_to  "Ajouter un nouveau projet", new_book_path %>
-
-<% @books.each do |book| %>
-    <h1><%= link_to book.title, book_show_path(book.id) %></h1>
-    <h2><%= book.subtitle %></h2>
-    <p><%= book.body %></p>
-    <%= image_tag book.thumb_img unless book.thumb_img.nil? %>
-    <%= link_to  "Modifier ce projet", edit_book_path(book.id) %>
-    <%= link_to  "Supprimer ce projet", book_path(book), method: :delete, data: { confirm: 'Are you sure?' } %>
+<%= render  @books %>    
     
-<% end %>
