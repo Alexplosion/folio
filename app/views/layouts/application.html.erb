@@ -10,5 +10,8 @@
 
   <body>
     <%= yield %>
+    <% if session[:source] %>
+    visiting from <%= session[:source] %>
+    <% end %>
   </body>
 </html>
