@@ -1,5 +1,11 @@
 class BooksController < ApplicationController
     before_action :set_book, only: [:edit, :update, :show, :destroy]
+    layout("book")
+
+
+
+
+
     def index
         @books = Book.all
     end
