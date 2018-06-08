@@ -18,4 +18,10 @@ module ApplicationHelper
         content_tag(:p,visite, class: "source-visite")
      end 
     end
+
+    def copyright_generator
+        @copyright = YamViewTool::Renderer.copyright("Alexandre Yameogo","Tous droits réservés")
+
+    end
+    
 end
