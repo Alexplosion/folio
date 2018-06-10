@@ -27,7 +27,7 @@ class Book < ApplicationRecord
     after_initialize :set_defaults
 
     def set_defaults
-        self.main_img ||= Placeholder.image_generator(600, 400)
+        self.main_img ||= Placeholder.image_generator(750, 500)
         self.thumb_img ||= Placeholder.image_generator(350, 250)
     end
 end
