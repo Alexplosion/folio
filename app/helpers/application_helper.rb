@@ -18,9 +18,44 @@ module ApplicationHelper
      end 
     end
 
+
     def copyright_generator
         @copyright = YamViewTool::Renderer.copyright("Alexandre Yameogo","Tous droits réservés")
 
     end
-    
+
+    def nav_items
+        [
+          {
+            url: root_path,
+            title: "Home"
+          },
+          {
+            url: about_path,
+            title: "À Propos"
+          },
+          {
+            url: contact_path,
+            title: "Me contacter"
+          },
+          {
+            url: books_path,
+            title: "Portolio"
+          },
+          {
+            url: blogs_path,
+            title: "Blog"
+          },        
+        ]
+    end
+
+
+    def nav_helper(style, tag_type)
+      nav_links = ""
+      nav_items.each do |item|
+        nav_links << "<#{tag_type}><a href='#{item[:url]}' class='#{style}'>#{item[:title]}</a></#{tag_type}>"
+      end
+      nav_links.html_safe 
+    end
+
 end

@@ -12,9 +12,7 @@
   <body>
 
   <%= render  "shared/book_nav" %>
-
-
-  <%= render  "shared/book_header" %>
+  <%= render  "shared/book_header" unless logged_in?(:site_admin) %>
 
 
     
