@@ -10,6 +10,10 @@
             <ul class="list-unstyled">
                <%= nav_helper("text-white","li") %>
                <li><%= login_helper("text-white") %></li>
+                <% if logged_in?(:site_admin)%>
+                 <li><%= link_to  "Nouveau Projet", new_book_path %></li>
+                <% end %>
+
             </ul>
           </div>
         </div>

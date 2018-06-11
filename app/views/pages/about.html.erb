@@ -1,20 +1,67 @@
 
+<div class="app-card-container">
+  <div class="card">
+    <h1>About Me</h1>
 
-      
+    <hr>
 
-    
-     <main role="main" class="inner cover">
-      <div class="row">
-        <div class="col-md-4">
-            <%= image_tag  "moi.jpeg", width: 250, alt:"image of me" %>
-        </div>
-        <div class="col-md-8">
-          <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tempor condimentum eros sollicitudin sollicitudin. Cras non ex vitae diam dignissim elementum eleifend ac ligula. Vivamus. </p>
-            
-        </div>
+    <div class="row">
+      <div class="col-md-4">
+        <%= image_tag "alex.jpg", width: "100%", alt: "profile image", class: 'profile-img' %>
+      </div>
 
+      <div class="col-md-8">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque in purus ac lorem commodo interdum. Duis ac nulla sodales, semper quam quis, condimentum enim. Phasellus interdum lacinia enim sit amet consectetur. Mauris nec elit non dolor pellentesque sagittis sit amet et neque. Praesent ultrices augue nec tincidunt porttitor. Sed accumsan blandit mi, eget dignissim orci tincidunt id. Mauris molestie lectus quis turpis posuere posuere.
+           Sed tincidunt dui consequat leo venenatis, quis commodo felis faucibus. Donec vulputate convallis diam, eget semper purus suscipit sed. 
+           Pellentesque pellentesque a justo ut interdum. Duis auctor nulla nec viverra ultricies. Duis sit amet erat sem. </p>
+        <p>
+          <button
+            class="btn btn-primary"
+            type="button"
+            data-toggle="collapse"
+            data-target="#jobHistory"
+            aria-expanded="false"
+            aria-controler="jobHistory"
+          >
+            Job History
+          </button>
 
+          <button
+            class="btn btn-primary"
+            type="button"
+            data-toggle="collapse"
+            data-target="#education"
+            aria-expanded="false"
+            aria-controler="education"
+          >
+            Education
+          </button>
+        </p>
 
-      </main>
+        <p>
+          <div class="collapse" id="jobHistory">
+            <div class="card card-block">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque in purus ac lorem commodo interdum. Duis ac nulla sodales, semper quam quis, condimentum enim. Phasellus interdum lacinia enim sit amet consectetur. Mauris nec elit non dolor pellentesque sagittis sit amet et neque. Praesent ultrices augue nec tincidunt porttitor. Sed accumsan blandit mi, eget dignissim orci tincidunt id. Mauris molestie lectus quis turpis posuere posuere.
+              Sed tincidunt dui consequat leo venenatis, quis commodo felis faucibus.
+            </div>
+            <div class="card card-block">
+              Job 2
+            </div>
+          </div>
 
-    
+          <div class="collapse" id="education">
+            <div class="card card-block">
+              School 1
+            </div>
+            <div class="card card-block">
+              School 2
+            </div>
+            <div class="card card-block">
+              School 3
+            </div>
+          </div>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>

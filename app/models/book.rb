@@ -14,7 +14,7 @@
 
 class Book < ApplicationRecord
     
-    has_many :technologies
+    has_many :technologies, dependent: :destroy
     accepts_nested_attributes_for :technologies, reject_if: ->(attributes){ attributes['name'].blank? }, allow_destroy: true
     
     validates_presence_of :title, :subtitle, :body 

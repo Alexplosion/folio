@@ -40,7 +40,7 @@ module ApplicationHelper
           },
           {
             url: books_path,
-            title: "Portolio"
+            title: "Portfolio"
           },
           {
             url: blogs_path,
