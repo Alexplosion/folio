@@ -37,6 +37,9 @@ gem 'carrierwave-aws', '~> 1.3'
 gem "cocoon"
 gem "gritter", "1.2.0"
 gem 'twitter', '~> 6.2'
+gem 'redcarpet', '~> 3.3', '>= 3.3.4'
+gem 'coderay', '~> 1.1', '>= 1.1.2'
+gem 'md_simple_editor'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
 # Use ActiveModel has_secure_password
