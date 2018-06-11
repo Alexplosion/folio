@@ -35,6 +35,7 @@ gem 'font-awesome-rails', '~> 4.6', '>= 4.6.3.1'
 gem 'kaminari', '~> 1.1', '>= 1.1.1'
 gem 'carrierwave-aws', '~> 1.3'
 gem "cocoon"
+gem "gritter", "1.2.0"
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
 # Use ActiveModel has_secure_password
