@@ -15,7 +15,6 @@ class BooksController < ApplicationController
     
     def new
         @book = Book.new
-        3.times {@book.technologies.build}
     end
 
     def create
@@ -64,7 +63,7 @@ class BooksController < ApplicationController
 
     private
     def book_params
-        params.require(:book).permit(:title, :subtitle, :body, :main_img, :thumb_img, technologies_attributes:[:name])
+        params.require(:book).permit(:title, :subtitle, :body, :main_img, :thumb_img, technologies_attributes:[:name, :id, :_destroy])
     end
     
     def set_book
