@@ -1,5 +1,5 @@
 <div class="card">
-    <%= image_tag book.thumb_img unless book.thumb_img.nil? %>
+     <%= image_tag book_img(book.thumb_img, "thumb") %>
     <p class="card-text">
      <span> <%= link_to book.title, book_show_path(book.id) %> <span> <%= book.subtitle %>
     </p>

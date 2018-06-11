@@ -33,6 +33,8 @@ gem 'yam_view_tool'
 gem 'petergate'
 gem 'font-awesome-rails', '~> 4.6', '>= 4.6.3.1'
 gem 'kaminari', '~> 1.1', '>= 1.1.1'
+gem 'carrierwave-aws', '~> 1.3'
+
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
 # Use ActiveModel has_secure_password
@@ -46,6 +48,8 @@ group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem "better_errors"
   gem "binding_of_caller"
+  gem 'dotenv-rails'
+
 end
 
 group :development do

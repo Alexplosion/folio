@@ -21,6 +21,8 @@ class BooksController < ApplicationController
     def create
         @book = Book.new(book_params)
         respond_to do |format|
+                    
+
             if @book.save
                 format.html { redirect_to books_path, notice: 'Votre projet est publié' }
             else
@@ -62,7 +64,7 @@ class BooksController < ApplicationController
 
     private
     def book_params
-        params.require(:book).permit(:title, :subtitle, :body, technologies_attributes:[:name])
+        params.require(:book).permit(:title, :subtitle, :body, :main_img, :thumb_img, technologies_attributes:[:name])
     end
     
     def set_book

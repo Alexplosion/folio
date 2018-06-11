@@ -141,9 +141,7 @@ body {
     height: auto;
     z-index: -100;
     -webkit-transform: translateX(-50%) translateY(-50%);
-    transform: translateX(-50%) translateY(-50%); //background: image-url('markus-spiske-cover.jpg') no-repeat;
-    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(markus-spiske-cover.jpg);
-    background-size: cover;
+    transform: translateX(-50%) translateY(-50%);
 }
 
 .app-footer {
