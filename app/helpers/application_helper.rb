@@ -45,7 +45,11 @@ module ApplicationHelper
           {
             url: blogs_path,
             title: "Blog"
-          },        
+          },  
+          {
+            url: actu_path,
+            title: "Twitter"
+          },              
         ]
     end
 

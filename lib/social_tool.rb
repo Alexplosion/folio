@@ -9,7 +9,7 @@ module SocialTool
 
 
 
-        client.search("#rails", result_type: "recent").take(7).collect do |tweet|
+        client.search("#Paris8 -rt", result_type: "recent").take(7).collect do |tweet|
              "#{tweet.user.screen_name}: #{tweet.text}"
         end
     end
