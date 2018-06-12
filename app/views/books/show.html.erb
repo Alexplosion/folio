@@ -14,7 +14,7 @@
 
         <div class="col-md-4">
           <h3 class="my-3"><%= @book.title %> </h3>
-          <h4 class="my-4"><%= @book.subtitle %> </h4>
+          <h4 class="my-4"><%= link_to  "Voir le projet", @book.url, target: :_blank %></h4>
 
           <p><%= @book.body %></p>
           <h3 class="my-3">Technologies utilisées</h3>
