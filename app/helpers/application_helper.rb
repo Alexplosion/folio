@@ -35,10 +35,6 @@ module ApplicationHelper
             title: "À Propos"
           },
           {
-            url: contact_path,
-            title: "Me contacter"
-          },
-          {
             url: books_path,
             title: "Portfolio"
           },

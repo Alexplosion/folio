@@ -19,8 +19,8 @@ class Book < ApplicationRecord
     
     validates_presence_of :title, :subtitle, :body 
     
-    mount_uploader :thumb_img, BookUploader
-    mount_uploader :main_img, BookUploader
+   # mount_uploader :thumb_img, BookUploader         #because of aws shutdown
+   # mount_uploader :main_img, BookUploader
     
 
 

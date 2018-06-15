@@ -6,7 +6,7 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-
+=begin 
 3.times do |topic| 
     Topic.create!(
         title: "Topic #{topic}"
@@ -52,3 +52,12 @@ end
     name: "Technology #{technology}"
   )
 end
+=end
+
+Book.create!(
+    title: "LolCart",
+    subtitle: "Angular",
+    body: "LolCart est une boutique en ligne de vente de photo de chat. Vous payez avec stripe et vous recevez votre photo dans votre boite mail ! Pour payer, insérez le numéro de carte bancaire suivant : 4242424242424242.",
+    main_img: "locart-capture.png",
+    thumb_img: "cat.png"
+)
